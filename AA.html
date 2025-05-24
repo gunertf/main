@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Plant tissure","children":[{"content":"permanent","children":[{"content":"complex permanent","children":[{"content":"xylem","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"phloem","children":[],"payload":{"tag":"li","lines":"11,12"}}],"payload":{"tag":"h3","lines":"9,10"}},{"content":"simple permanent","children":[{"content":"parenchyma","children":[{"content":"All have","children":[{"content":"there are air space","children":[],"payload":{"tag":"li","lines":"15,16"}}],"payload":{"tag":"li","lines":"14,16"}},{"content":"Chlorenchyma","children":[{"content":"it have chloroplast","children":[],"payload":{"tag":"li","lines":"17,18"}}],"payload":{"tag":"li","lines":"16,18"}},{"content":"Aerenchyma","children":[{"content":"there are many air space ,,it mean in water","children":[],"payload":{"tag":"li","lines":"19,20"}}],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"li","lines":"13,20"}},{"content":"collenchyma","children":[{"content":"primary cell wall","children":[],"payload":{"tag":"li","lines":"21,22"}}],"payload":{"tag":"li","lines":"20,22"}},{"content":"sclerenchyma--&gt;(secondary cell wall)","children":[{"content":"sclereid","children":[{"content":"&#xe15;&#xe32;&#xe22;&#xe40;&#xe40;&#xe25;&#xe49;&#xe27;","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"plamodesmata","children":[],"payload":{"tag":"li","lines":"25,26"}}],"payload":{"tag":"li","lines":"23,26"}},{"content":"fiber","children":[{"content":"&#xe15;&#xe32;&#xe22;&#xe40;&#xe40;&#xe25;&#xe49;&#xe27;","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"rutile","children":[],"payload":{"tag":"li","lines":"28,29"}}],"payload":{"tag":"li","lines":"26,29"}}],"payload":{"tag":"li","lines":"22,29"}},{"content":"Epidermis","children":[{"content":"all have wax","children":[{"content":"cuticle--&gt;layer of cutin","children":[],"payload":{"tag":"li","lines":"31,32"}}],"payload":{"tag":"li","lines":"30,32"}},{"content":"bulliform cell","children":[{"content":"big epidermis","children":[],"payload":{"tag":"li","lines":"33,34"}}],"payload":{"tag":"li","lines":"32,34"}},{"content":"trichromis","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"guard cell","children":[{"content":"chloroplast","children":[],"payload":{"tag":"li","lines":"36,39"}}],"payload":{"tag":"li","lines":"35,39"}}],"payload":{"tag":"li","lines":"29,39"}}],"payload":{"tag":"h3","lines":"12,13"}}],"payload":{"tag":"h2","lines":"7,8"}},{"content":"meristemata","children":[{"content":"\n<p data-lines=\"40,41\">Apical(primary growth)</p>","children":[{"content":"\n<p data-lines=\"41,42\">protodrem</p>","children":[{"content":"&#xe1b;&#xe25;&#xe32;&#xe22;&#xe23;&#xe32;&#xe01; &#xe22;&#xe2d;&#xe14; &#xe15;&#xe32;&#xe02;&#xe49;&#xe32;&#xe07;","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"produce epidermis","children":[],"payload":{"tag":"li","lines":"43,45"}}],"payload":{"tag":"li","lines":"41,45"}},{"content":"\n<p data-lines=\"45,46\">Procambuim</p>","children":[{"content":"produce vascular cambium","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"cork cambium","children":[],"payload":{"tag":"li","lines":"47,48"}}],"payload":{"tag":"li","lines":"45,48"}},{"content":"\n<p data-lines=\"48,49\">ground meristem</p>","children":[],"payload":{"tag":"li","lines":"48,50"}}],"payload":{"tag":"li","lines":"40,50"}},{"content":"\n<p data-lines=\"50,51\">Lateral(secondary growth)</p>","children":[],"payload":{"tag":"li","lines":"50,54"}},{"content":"\n<p data-lines=\"54,55\">Internal</p>","children":[{"content":"\n<p data-lines=\"55,56\">node(&#xe21;&#xe35;&#xe01;&#xe34;&#xe48;&#xe07;&#xe07;&#xe2d;&#xe01;&#xe2d;&#xe2d;&#xe01;&#xe21;&#xe32;&#xe44;&#xe14;&#xe49; &#xe40;&#xe1e;&#xe23;&#xe32;&#xe30; &#xe21;&#xe35;&#xe15;&#xe32;&#xe02;&#xe49;&#xe32;&#xe07;)</p>","children":[],"payload":{"tag":"li","lines":"55,57"}},{"content":"\n<p data-lines=\"57,58\">internode</p>","children":[],"payload":{"tag":"li","lines":"57,59"}}],"payload":{"tag":"li","lines":"54,59"}}],"payload":{"tag":"h2","lines":"39,40"}}]},{"colorFreezeLevel":5})</script>
+</body>
+</html>
