@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"plant tissure","children":[{"content":"permanent","children":[{"content":"complex permanent","children":[{"content":"xylem=&gt;Only water","children":[{"content":"There are 4 type of cell in xylem","children":[{"content":"Vessel element(die)","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"Trachieds(die)","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"Xylem fiber(die)","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"Xylem parenchyma","children":[{"content":"&#xe01;&#xe23;&#xe30;&#xe08;&#xe32;&#xe22;&#xe2d;&#xe32;&#xe2b;&#xe32;&#xe23;&#xe43;&#xe19;&#xe40;&#xe40;&#xe19;&#xe27;crossection","children":[],"payload":{"tag":"li","lines":"17,18"}}],"payload":{"tag":"li","lines":"16,18"}}],"payload":{"tag":"li","lines":"12,18"}},{"content":"TYPE","children":[{"content":"Plant","children":[{"content":"No flower","children":[{"content":"xylem panlenchyma","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"tricheid","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"xylem fiber","children":[],"payload":{"tag":"li","lines":"23,24"}}],"payload":{"tag":"li","lines":"20,24"}},{"content":"Flower","children":[{"content":"All(4)","children":[],"payload":{"tag":"li","lines":"25,26"}}],"payload":{"tag":"li","lines":"24,26"}}],"payload":{"tag":"li","lines":"19,26"}},{"content":"cell wall","children":[{"content":"secondary cell wall","children":[{"content":"vessel element","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"tricheid","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"xylem fiber","children":[],"payload":{"tag":"li","lines":"30,31"}}],"payload":{"tag":"li","lines":"27,31"}}],"payload":{"tag":"li","lines":"26,31"}}],"payload":{"tag":"li","lines":"18,31"}}],"payload":{"tag":"li","lines":"11,31"}},{"content":"phloem=&gt; cell alive except Phloem fiber","children":[{"content":"seive tube","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"companion cell","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"Phloem fiber","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"Phloem parenchyma","children":[],"payload":{"tag":"li","lines":"35,37"}}],"payload":{"tag":"li","lines":"31,37"}}],"payload":{"tag":"h3","lines":"10,11"}},{"content":"simple permanent","children":[{"content":"\n<p data-lines=\"38,39\">parenchyma--&gt;primary cell wall</p>","children":[{"content":"Aerenchyma","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"Chlorenchyma","children":[],"payload":{"tag":"li","lines":"40,41"}}],"payload":{"tag":"li","lines":"38,41"}},{"content":"\n<p data-lines=\"41,42\">collenchyma--&gt;primary cell wall-&gt;doesn break the cell</p>","children":[],"payload":{"tag":"li","lines":"41,43"}},{"content":"\n<p data-lines=\"43,44\">sclerenchyma-&gt;secondary cell wall-&gt;hardness(die)</p>","children":[{"content":"sclereid","children":[{"content":"&#xe15;&#xe32;&#xe22;&#xe40;&#xe40;&#xe25;&#xe49;&#xe27;","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"(pits)Pasmodesmata","children":[],"payload":{"tag":"li","lines":"46,47"}}],"payload":{"tag":"li","lines":"44,47"}},{"content":"fiber","children":[{"content":"&#xe15;&#xe32;&#xe22;&#xe40;&#xe40;&#xe25;&#xe49;&#xe27;","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Rutile","children":[],"payload":{"tag":"li","lines":"49,50"}}],"payload":{"tag":"li","lines":"47,50"}}],"payload":{"tag":"li","lines":"43,50"}},{"content":"\n<p data-lines=\"50,51\">epidermis-&gt;layer cutin(called cuticle)</p>","children":[{"content":"Guard cell","children":[{"content":"control cell","children":[],"payload":{"tag":"li","lines":"53,54"}}],"payload":{"tag":"li","lines":"52,54"}},{"content":"Trichome","children":[{"content":"protect tissure","children":[],"payload":{"tag":"li","lines":"55,56"}}],"payload":{"tag":"li","lines":"54,56"}},{"content":"Bulliform cell","children":[{"content":"Big epidermis","children":[],"payload":{"tag":"li","lines":"57,60"}}],"payload":{"tag":"li","lines":"56,60"}}],"payload":{"tag":"li","lines":"50,60"}}],"payload":{"tag":"h3","lines":"37,38"}}],"payload":{"tag":"h2","lines":"7,8"}},{"content":"meristemata","children":[{"content":"\n<p data-lines=\"61,62\">apical-&gt;primary growth</p>","children":[{"content":"\n<p data-lines=\"62,63\">protodrem</p>","children":[{"content":"&#xe1b;&#xe25;&#xe32;&#xe22;&#xe23;&#xe32;&#xe01; &#xe22;&#xe2d;&#xe14; &#xe15;&#xe32;&#xe02;&#xe49;&#xe32;&#xe07;","children":[],"payload":{"tag":"li","lines":"63,64"}},{"content":"produce epidermis","children":[],"payload":{"tag":"li","lines":"64,66"}}],"payload":{"tag":"li","lines":"62,66"}},{"content":"\n<p data-lines=\"66,67\">procambuim</p>","children":[{"content":"produce vascular cambium","children":[],"payload":{"tag":"li","lines":"67,68"}},{"content":"produce cork cambium","children":[],"payload":{"tag":"li","lines":"68,69"}},{"content":"1 phloem","children":[],"payload":{"tag":"li","lines":"69,70"}},{"content":"1 xylem","children":[],"payload":{"tag":"li","lines":"70,71"}}],"payload":{"tag":"li","lines":"66,71"}},{"content":"\n<p data-lines=\"71,72\">ground meristem</p>","children":[],"payload":{"tag":"li","lines":"71,73"}}],"payload":{"tag":"li","lines":"61,73"}},{"content":"\n<p data-lines=\"73,74\">lateral-&gt;secondary growth</p>","children":[{"content":"vascular cambium","children":[{"content":"2 xylem","children":[],"payload":{"tag":"li","lines":"75,76"}},{"content":"2 phloem","children":[],"payload":{"tag":"li","lines":"76,79"}}],"payload":{"tag":"li","lines":"74,79"}}],"payload":{"tag":"li","lines":"73,79"}},{"content":"\n<p data-lines=\"79,80\">internal-&gt;primary growth</p>","children":[{"content":"Node(&#xe21;&#xe35;&#xe15;&#xe32;&#xe02;&#xe49;&#xe32;&#xe07;-&gt;&#xe21;&#xe35;&#xe01;&#xe34;&#xe48;&#xe07;&#xe07;&#xe2d;&#xe01;&#xe2d;&#xe2d;&#xe01;&#xe21;&#xe32;)","children":[],"payload":{"tag":"li","lines":"80,81"}},{"content":"internode(&#xe40;&#xe15;&#xe34;&#xe1a;&#xe42;&#xe15;&#xe15;&#xe25;&#xe2d;&#xe14;)","children":[],"payload":{"tag":"li","lines":"81,83"}}],"payload":{"tag":"li","lines":"79,83"}}],"payload":{"tag":"h2","lines":"60,61"}}]},{"colorFreezeLevel":10})</script>
+</body>
+</html>
